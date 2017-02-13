@@ -16,11 +16,7 @@
         android:id="@+id/activity_head"
         android:layout_margin="15dp"
         android:textSize="22sp"
-        android:textColor="@android:color/white"
-        android:shadowColor="@android:color/black"
-        android:shadowRadius="5"
-        android:shadowDx="0"
-        android:shadowDy="0"/>
+        android:textColor="@android:color/white"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="60dp"
@@ -39,10 +35,6 @@
         android:padding="5dp"
         android:id="@+id/nothing_label"
         android:textSize="18sp"
-        android:shadowColor="@android:color/black"
-        android:shadowRadius="5"
-        android:shadowDx="0"
-        android:shadowDy="0"
         />
     <TextView
         android:layout_width="wrap_content"

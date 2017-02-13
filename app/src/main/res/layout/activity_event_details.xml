@@ -38,16 +38,16 @@
                 android:adjustViewBounds="true"
                 android:layout_centerHorizontal="true" />
 
-            <TextView
-                android:text="Date"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/event_date"
-                android:textSize="18sp"
-                android:textColor="@android:color/white"
-                android:layout_below="@+id/event_img"
-                android:maxLines="1"/>
+                 <TextView
+                     android:text="Date"
+                     android:gravity="center"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/event_date"
+                     android:textSize="18sp"
+                     android:textColor="@android:color/white"
+                     android:layout_below="@+id/event_img"
+                     android:maxLines="1"/>
 
 
             <RelativeLayout

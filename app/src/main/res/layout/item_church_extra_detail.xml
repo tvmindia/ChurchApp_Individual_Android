@@ -25,7 +25,7 @@
             android:id="@+id/detail_image"
             android:layout_margin="10dp"
             android:src="@drawable/church"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
             android:layout_below="@+id/extra_detail_label"/>
         <TextView
             android:layout_width="match_parent"

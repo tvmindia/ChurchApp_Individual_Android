@@ -26,15 +26,15 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"/>
 
-    <!--            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/priest_name_label"
-                    android:text="@string/name"
-                    android:textSize="12sp"
-                    android:textColor="@color/secondary_text"
-                    android:layout_toRightOf="@+id/priest_image"
-                    android:layout_toEndOf="@+id/priest_image"/>-->
+                <!--            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/priest_name_label"
+                                android:text="@string/name"
+                                android:textSize="12sp"
+                                android:textColor="@color/secondary_text"
+                                android:layout_toRightOf="@+id/priest_image"
+                                android:layout_toEndOf="@+id/priest_image"/>-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

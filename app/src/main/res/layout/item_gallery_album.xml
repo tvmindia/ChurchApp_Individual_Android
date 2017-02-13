@@ -27,14 +27,15 @@
             android:adjustViewBounds="true"
             />
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/video"
-            android:layout_alignRight="@+id/grid_img"
-            android:layout_alignEnd="@id/grid_img"
-            android:layout_alignTop="@+id/grid_img"
             android:id="@+id/video_icon"
-            android:layout_marginTop="20dp"
+            android:background="@drawable/white_transparent_card"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             />
         <TextView
             android:layout_width="wrap_content"

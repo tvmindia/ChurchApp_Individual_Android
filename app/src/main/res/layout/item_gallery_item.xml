@@ -24,6 +24,18 @@
         android:adjustViewBounds="true"
         android:id="@+id/image"
         android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/video"
+            android:id="@+id/video_icon"
+            android:background="@drawable/white_transparent_card"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
     </RelativeLayout>
 
 </LinearLayout>

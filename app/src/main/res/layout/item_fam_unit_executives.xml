@@ -17,7 +17,7 @@
                 android:layout_margin="11dp"
                 android:id="@+id/person_img"
                 android:adjustViewBounds="true"
-                android:scaleType="centerInside"/>
+                android:scaleType="fitCenter"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

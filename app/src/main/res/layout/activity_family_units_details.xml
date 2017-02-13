@@ -19,11 +19,7 @@
         android:id="@+id/family_units_name_head"
         android:layout_margin="15dp"
         android:textSize="22sp"
-        android:textColor="@android:color/white"
-        android:shadowColor="@android:color/black"
-        android:shadowRadius="5"
-        android:shadowDx="0"
-        android:shadowDy="0"/>
+        android:textColor="@android:color/white"/>
 
 
     <com.wang.avi.AVLoadingIndicatorView
@@ -98,7 +94,7 @@
             android:src="@drawable/familywhite"
             fab:fab_label="@string/unitexe"
             fab:fab_size="mini"
-            fab:fab_colorNormal="@color/black_patch"
+            fab:fab_colorNormal="#8d62d8"
             fab:fab_colorPressed="#2e2248"
             />
 
