@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_novena_church_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tech.thrithvam.palarivattomstjohnthebaptistchurch.NovenaDetailsList"
+    android:background="@drawable/church_bg">
+    <TextView
+        android:text="@string/novenas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/activity_head"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="5"
+        android:shadowDx="0"
+        android:shadowDy="0"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/itemsLoading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        app:indicator="BallTrianglePath"
+        app:indicator_color="@color/white_patch"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/novena_church_list"
+        android:layout_below="@+id/activity_head"
+        android:divider="@null"/>
+</RelativeLayout>

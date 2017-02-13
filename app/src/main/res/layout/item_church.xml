@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_patch">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_margin="11dp"
+                android:src="@drawable/church"
+                android:id="@+id/church_image"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:text="Church Name"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/church_image"
+                android:id="@+id/church_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address"
+                android:textColor="@color/secondary_text"
+                android:id="@+id/address"
+                android:layout_toRightOf="@+id/church_image"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/church_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Town Name"
+                android:id="@+id/town"
+                android:textSize="14sp"
+                android:textColor="@color/primary_text"
+                android:layout_below="@+id/address"
+                android:layout_toRightOf="@+id/church_image"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </RelativeLayout>
+</LinearLayout>

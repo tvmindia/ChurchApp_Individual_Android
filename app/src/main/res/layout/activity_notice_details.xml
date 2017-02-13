@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notice_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/church_bg"
+    tools:context="com.tech.thrithvam.palarivattomstjohnthebaptistchurch.NoticeDetails">
+
+    <TextView
+        android:text="@string/notices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/activity_notice_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="5"
+        android:shadowDx="0"
+        android:shadowDy="0"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_scrollview"
+        android:layout_below="@+id/activity_notice_head"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:maxHeight="200dp"
+                android:id="@+id/notice_img"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:onClick="imageclick"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/NoticeLayout"
+                android:layout_below="@+id/notice_img"
+                android:layout_margin="7dp"
+                android:background="@drawable/white_transparent_card"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details"
+                    android:id="@+id/notice_details"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:ellipsize="end"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

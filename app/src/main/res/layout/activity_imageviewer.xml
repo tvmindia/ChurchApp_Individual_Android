@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_imageviewer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/church_bg"
+    tools:context="com.tech.thrithvam.palarivattomstjohnthebaptistchurch.ImageViewerActivity">
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/itemsLoading"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="visible"
+        app:indicator="BallScale"
+        app:indicator_color="@color/white_patch"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <uk.co.senab.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/punchAttachView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="7dp"
+        android:id="@+id/rotateimage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/rotateaccent"
+        android:onClick="rotateImage"
+        android:clickable="true"/>
+</RelativeLayout>

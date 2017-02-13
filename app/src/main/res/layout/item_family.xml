@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:text="Family Head"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:id="@+id/family_head"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Name"
+            android:id="@+id/family_name"
+            android:textSize="14sp"
+            android:textColor="@color/secondary_text"
+            android:layout_below="@+id/family_head"
+            android:paddingBottom="5dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </RelativeLayout>
+
+</LinearLayout>

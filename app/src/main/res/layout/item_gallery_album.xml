@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:background="@drawable/album_frame"
+        android:id="@+id/frame">
+
+        <ImageView
+            android:id="@+id/grid_img"
+            android:layout_gravity="center"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:paddingTop="20dp"
+            android:paddingBottom="22dp"
+            android:adjustViewBounds="true"
+            />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/video"
+            android:layout_alignRight="@+id/grid_img"
+            android:layout_alignEnd="@id/grid_img"
+            android:layout_alignTop="@+id/grid_img"
+            android:id="@+id/video_icon"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="view count"
+            android:id="@+id/item_count"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="3"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/grid_txt"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:padding="3dp"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Developed by"
+        android:textSize="12sp"
+        android:textColor="@color/secondary_text"
+        android:id="@+id/church_address_label" />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="THRITHVAM TECHNOLOGY"
+    android:textSize="16sp"
+    android:layout_marginLeft="5dp"
+    android:textColor="@color/primary_text"
+    android:id="@+id/church_address"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="A software development company incorporated in UAE, Qatar and India. Our team comprises of people with profound experience in IT industry in many domains there by providing latest innovative IT solutions for various industries. We are a software consulting and solutioning company offering development, software integration and offshore outsourcing services."
+        android:textSize="12sp"
+        android:textColor="@color/secondary_text"
+        android:id="@+id/about_company" />
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="info@thrithvam.com"
+        android:textSize="12sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/email" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share the app with others ☺ "
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/share_app"
+        android:gravity="end"
+        />
+
+</LinearLayout>
