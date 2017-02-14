@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.messaging.FirebaseMessaging;
+
 public class Home extends AppCompatActivity {
     AsyncTask getTowns=null;
     View popupView;
@@ -24,7 +26,7 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        FirebaseMessaging.getInstance().subscribeToTopic(constants.ChurchID);
         //Fonts--------------
         Typeface typeCopperplateGothic = Typeface.createFromAsset(getAssets(),"fonts/copperplate-gothic.ttf");
         Typeface typeoldeng = Typeface.createFromAsset(getAssets(),"fonts/oldeng.ttf");

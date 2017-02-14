@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "792940681018",
+    "firebase_url": "https://palarivattomstjohnthebaptistch.firebaseio.com",
+    "project_id": "palarivattomstjohnthebaptistch",
+    "storage_bucket": "palarivattomstjohnthebaptistch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792940681018:android:2acca98d02b4f841",
+        "android_client_info": {
+          "package_name": "com.tech.thrithvam.palarivattomstjohnthebaptistchurch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792940681018-vadsr6s0agl6djf5u2uqmeobbcrqjcj3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.thrithvam.palarivattomstjohnthebaptistchurch",
+            "certificate_hash": "7DBFB38C2B2C776425AF4D6F8457B4AD705A25BB"
+          }
+        },
+        {
+          "client_id": "792940681018-kibtne22800q2bd5tl179343i5upolu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH5eU2eIknNsXtmRjZ-U0dWL0j2nscM6M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792940681018-kibtne22800q2bd5tl179343i5upolu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
