@@ -43,9 +43,11 @@ public class GalleryItems extends AppCompatActivity {
         extras=getIntent().getExtras();
         albumID=extras.getString("albumID");
         albumName=extras.getString("albumName");
-        TextView activityHead=(TextView)findViewById(R.id.activity_head);
-        activityHead.setTypeface(typeQuicksand);
-        activityHead.setText(albumName);
+        if(!albumName.equals("null")){
+            TextView activityHead=(TextView)findViewById(R.id.activity_head);
+            activityHead.setTypeface(typeQuicksand);
+            activityHead.setText(albumName);
+        }
         galleryGrid =(GridView) findViewById(R.id.gallery_grid);
         if (isOnline()) {
             getGalleryItems=new GetGalleryItems().execute();
