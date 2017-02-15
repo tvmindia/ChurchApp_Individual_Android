@@ -757,7 +757,7 @@ public class CustomAdapter extends BaseAdapter {
                 }
                 break;
             //------------------Notifications list---------------------------
-      /*      case "Notifications":
+            case "Notifications":
                 if (convertView == null) {
                     holder = new Holder();
                     convertView = inflater.inflate(R.layout.item_notification, null);
@@ -775,7 +775,7 @@ public class CustomAdapter extends BaseAdapter {
                 holder.notTitle.setTypeface(typeQuicksand);
                 holder.notDesc.setTypeface(typeSegoe);
                 holder.notDate.setTypeface(typeSegoe);
-                break;*/
+                break;
             default:
                 break;
         }
