@@ -75,6 +75,11 @@ public class FamilyUnitsDetails extends AppCompatActivity {
             getFamilyList = new  GetFamilyList().execute();
         } else {
             Toast.makeText(FamilyUnitsDetails.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Family Units");
+            startActivity(noItemsIntent);
+            finish();
         }
 
 
@@ -89,6 +94,11 @@ public class FamilyUnitsDetails extends AppCompatActivity {
                     getFamilyExecutiveList = new  GetFamilyExecutiveList().execute();
                 } else {
                     Toast.makeText(FamilyUnitsDetails.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+                    Intent noItemsIntent=new Intent(FamilyUnitsDetails.this,NothingToDisplay.class);
+                    noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+                    noItemsIntent.putExtra("activityHead","Family Units");
+                    startActivity(noItemsIntent);
+                    finish();
                 }
                 floatingActionMenu.close(true);
                 ImageButton btnDismiss = (ImageButton)popupView.findViewById(R.id.ib_close);

@@ -49,6 +49,11 @@ public class PiousOrgs extends AppCompatActivity {
             getPiousOrgList=new GetPiousOrgList().execute();
         } else {
             Toast.makeText(PiousOrgs.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Pious Organisations");
+            startActivity(noItemsIntent);
+            finish();
         }
     }
 

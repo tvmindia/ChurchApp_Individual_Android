@@ -49,6 +49,11 @@ public class Notices extends AppCompatActivity {
             getNoticeList=new GetNoticeList().execute();
         } else {
             Toast.makeText(Notices.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Notices");
+            startActivity(noItemsIntent);
+            finish();
         }
     }
     //---------------------------------Async Tasks--------------------------------------

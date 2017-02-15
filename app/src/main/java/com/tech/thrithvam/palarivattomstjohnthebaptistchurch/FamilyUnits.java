@@ -47,6 +47,11 @@ public class FamilyUnits extends AppCompatActivity {
             getFamilyUnitList = new GetFamilyUnitList().execute();
         } else {
             Toast.makeText(FamilyUnits.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Family units");
+            startActivity(noItemsIntent);
+            finish();
         }
     }
     //-----------------------------Async Tasks--------------------------------

@@ -56,6 +56,11 @@ public class MyChurchDetails extends AppCompatActivity {    //Currently only use
             }
         } else {
             Toast.makeText(MyChurchDetails.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Church");
+            startActivity(noItemsIntent);
+            finish();
         }
     }
     //------------------------Async Tasks------------------------------------

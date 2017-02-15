@@ -49,6 +49,11 @@ public class PriestDetails extends AppCompatActivity {
             getPriestList= new GetPriestList().execute();
         } else {
             Toast.makeText(PriestDetails.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Priests");
+            startActivity(noItemsIntent);
+            finish();
         }
     }
 

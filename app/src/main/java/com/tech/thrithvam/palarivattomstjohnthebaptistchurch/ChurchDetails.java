@@ -71,6 +71,11 @@ public class ChurchDetails extends AppCompatActivity {
             getChurchDetails=new GetChurchDetails().execute();
         } else {
             Toast.makeText(ChurchDetails.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Church");
+            startActivity(noItemsIntent);
+            finish();
         }
         //Layouts-----------------------------------
         floatingActionMenu=(FloatingActionMenu)findViewById(R.id.material_design_android_floating_action_menu);

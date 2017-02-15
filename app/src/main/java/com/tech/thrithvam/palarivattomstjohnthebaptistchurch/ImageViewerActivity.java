@@ -1,6 +1,7 @@
 package com.tech.thrithvam.palarivattomstjohnthebaptistchurch;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -47,6 +48,10 @@ public class ImageViewerActivity extends AppCompatActivity {
         }
         else {
             Toast.makeText(ImageViewerActivity.this,R.string.network_off_alert,Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Image");
+            startActivity(noItemsIntent);
             finish();
         }
     }

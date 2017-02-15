@@ -52,6 +52,11 @@ public class Institutions extends AppCompatActivity {
             getInstitutionsList=new GetInstitutionsList().execute();
         } else {
             Toast.makeText(Institutions.this, R.string.network_off_alert, Toast.LENGTH_LONG).show();
+            Intent noItemsIntent=new Intent(this,NothingToDisplay.class);
+            noItemsIntent.putExtra("msg",getResources().getString(R.string.network_off_alert));
+            noItemsIntent.putExtra("activityHead","Institutions");
+            startActivity(noItemsIntent);
+            finish();
         }
     }
 
