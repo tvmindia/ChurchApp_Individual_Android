@@ -22,7 +22,11 @@
         android:textSize="22sp"
         android:textColor="@android:color/white"
         android:maxLines="3"
-        android:ellipsize="end"/>
+        android:ellipsize="end"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="5"
+        android:shadowDx="0"
+        android:shadowDy="0"/>
     <GridView
         android:layout_width="370dp"
         android:layout_centerHorizontal="true"
