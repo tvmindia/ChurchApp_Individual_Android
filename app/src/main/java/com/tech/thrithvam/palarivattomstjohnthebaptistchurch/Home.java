@@ -135,6 +135,10 @@ public class Home extends AppCompatActivity {
         Intent intent=new Intent(Home.this,SearchResults.class);
         startActivity(intent);
     }
+    public void notification(View view){
+        Intent intent=new Intent(Home.this,Notifications.class);
+        startActivity(intent);
+    }
     public boolean isOnline() {
         ConnectivityManager cm =(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();

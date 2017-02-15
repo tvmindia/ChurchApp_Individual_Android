@@ -66,4 +66,5 @@
     <string name="search">Search</string>
     <string name="set_reminder">Set reminder ⏰</string>
     <string name="old_events">Old events</string>
+    <string name="notifications">Notifications</string>
 </resources>

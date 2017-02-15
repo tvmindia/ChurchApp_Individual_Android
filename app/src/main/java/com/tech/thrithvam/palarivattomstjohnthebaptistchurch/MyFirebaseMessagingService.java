@@ -27,11 +27,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             title = remoteMessage.getData().get("title") == null ? "" : remoteMessage.getData().get("title");
             description = remoteMessage.getData().get("body") == null ? "" : remoteMessage.getData().get("body");
             DatabaseHandler db = DatabaseHandler.getInstance(this);
-         /*   db.InsertNotificationIDs(remoteMessage.getMessageId(),
+            db.InsertNotificationIDs(remoteMessage.getMessageId(),
                     title,
                     description,
                     Long.toString(remoteMessage.getSentTime()));
-*/
             //Notification----------------------
             NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
             NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(MyFirebaseMessagingService.this);

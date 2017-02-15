@@ -11,7 +11,16 @@
         android:layout_height="match_parent"
         android:background="#36222222"/>
 
-
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/notification"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:id="@+id/notification"
+        android:onClick="notification"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
