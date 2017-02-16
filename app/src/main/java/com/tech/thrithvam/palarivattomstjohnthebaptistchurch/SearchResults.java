@@ -182,7 +182,6 @@ public class SearchResults extends AppCompatActivity {
                         intent.putExtra("town",churchItems.get(position)[2]);
                         intent.putExtra("address",churchItems.get(position)[4]);
                         startActivity(intent);
-                        finish();
                     }
                 });
                 searchText.setSelectAllOnFocus(true);

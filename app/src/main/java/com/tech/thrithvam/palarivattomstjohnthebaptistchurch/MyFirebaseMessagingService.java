@@ -30,7 +30,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             db.InsertNotificationIDs(remoteMessage.getMessageId(),
                     title,
                     description,
-                    Long.toString(remoteMessage.getSentTime()));
+                    Long.toString(java.util.Calendar.getInstance().getTimeInMillis()));
             //Notification----------------------
             NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
             NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(MyFirebaseMessagingService.this);
