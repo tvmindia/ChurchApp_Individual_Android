@@ -79,7 +79,7 @@ public class Home extends AppCompatActivity {
                         Intent shareIntent = new Intent();
                         shareIntent.setAction(Intent.ACTION_SEND);
                         shareIntent.setType("text/*");
-                        shareIntent.putExtra(Intent.EXTRA_TEXT, "Here is an innovative app to stay connected with Churches & Novenas in town \nhttps://goo.gl/jDMq6M");
+                        shareIntent.putExtra(Intent.EXTRA_TEXT, "Here is an innovative app to stay connected with "+constants.ChurchName +" and other Churches & Novenas in town \nhttps://goo.gl/vZn4Zj");
                         startActivity(Intent.createChooser(shareIntent, "Share app"));
                     }
                 });
